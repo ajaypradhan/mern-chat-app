@@ -23,9 +23,7 @@ const Signup = () => {
 
   const postDetails = (pics) => {};
 
-  const submitHandler = () => {
-    
-  }
+  const submitHandler = () => {};
   return (
     <VStack spacing={"5px"}>
       <FormControl id="first-name" isRequired>
@@ -78,7 +76,7 @@ const Signup = () => {
           <Input
             type="file"
             p={1.5}
-            accept="images/*"
+            accept="image/*"
             onChange={(e) => postDetails(e.target.files[0])}
           />
           <InputRightElement width={"4.5rem"}>
